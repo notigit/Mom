@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_left_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_left_setting_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="138dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sidebar_setting_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_left_createbook_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_left_setting_lay"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sidebar_createbook_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="生成册子"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_18" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_left_ad_image"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/sidebar_ad_img" />
+
+</RelativeLayout>

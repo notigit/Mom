@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_top_ray"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/main_top_dialog" >
+
+        <com.xiaoaitouch.mom.view.WaveView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            app:above_wave_color="@android:color/white"
+            app:blow_wave_color="@android:color/white"
+            app:wave_height="large"
+            app:wave_hz="slow"
+            app:wave_length="little" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/dialog_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="绑定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/dialog_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_dialog"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/are_ray"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="30dp" >
+
+            <LinearLayout
+                android:id="@+id/capture_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <SurfaceView
+                    android:id="@+id/preview_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <com.xiaoaitouch.mom.zxing.view.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/are_ray"
+            android:gravity="center_horizontal"
+            android:text="请扫描芯片上的二维码"
+            android:textColor="@color/activity_top_color"
+            android:textSize="@dimen/size_dp_16" />
+    </RelativeLayout>
+
+</LinearLayout>

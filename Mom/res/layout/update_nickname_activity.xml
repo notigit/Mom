@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/activity_top_color" >
+
+        <ImageView
+            android:id="@+id/activity_top_back_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoe_bake_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/activity_update_nickname"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_20" />
+    </RelativeLayout>
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="8dp" />
+
+    <com.xiaoaitouch.mom.view.XEditText
+        android:id="@+id/user_input_nickname_et"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/user_input_symptom_bg"
+        android:gravity="center_vertical"
+        android:hint="请输入新的昵称"
+        android:maxLength="12"
+        android:paddingLeft="6dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/size_dp_16" />
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <com.xiaoaitouch.mom.view.XTextView
+        android:id="@+id/nickname_save_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/login_bg_item"
+        android:gravity="center"
+        android:text="@string/save_tv"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_18" />
+
+</LinearLayout>

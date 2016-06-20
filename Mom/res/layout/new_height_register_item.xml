@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ActionSheetDialogBg"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp" >
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_16"
+                app:textview_bold="1" />
+
+            <Button
+                android:id="@+id/done_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="完成"
+                android:textColor="#1886FE"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/height_left_tv"
+                android:text="身高"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_18" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/height_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/meters_left_tv"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/meters_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/choose_view"
+                android:text="米"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_18" />
+
+            <com.xiaoaitouch.mom.view.CommonWheelView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/choose_view"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:selectionDividerActiveAlpha="255"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1px"
+                app:visibleItems="5" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/choose_view"
+                android:text="厘米"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_18" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

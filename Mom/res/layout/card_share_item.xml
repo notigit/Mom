@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/photo_share_top_image1"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/share_car_img1"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="98dp"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <include
+                android:id="@+id/photo_share_content_view"
+                layout="@layout/main_card_share_item_include"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/share_gridview_ray"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.32"
+                android:gravity="center"
+                android:visibility="invisible" >
+
+                <GridView
+                    android:id="@+id/share_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    android:gravity="center_horizontal"
+                    android:horizontalSpacing="16dp"
+                    android:layoutAnimation="@anim/gridview_anim"
+                    android:listSelector="#00000000"
+                    android:numColumns="5"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="true"
+                    android:soundEffectsEnabled="true"
+                    android:verticalSpacing="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/photo_share_top_image2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/share_car_img"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

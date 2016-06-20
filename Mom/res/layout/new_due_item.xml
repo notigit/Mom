@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionSheetDialogBg"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp" >
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_18" />
+
+            <Button
+                android:id="@+id/done_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="完成"
+                android:textColor="#1886FE"
+                android:textSize="@dimen/size_dp_18"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.xiaoaitouch.mom.view.CommonWheelView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/due_yser_choose_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/due_month_choose_view"
+                app:selectionDividerActiveAlpha="255"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1px"
+                app:visibleItems="5" />
+
+            <com.xiaoaitouch.mom.view.CommonWheelView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/due_month_choose_view"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:selectionDividerActiveAlpha="255"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1px"
+                app:visibleItems="5" />
+
+            <com.xiaoaitouch.mom.view.CommonWheelView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/due_date_choose_view"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/due_month_choose_view"
+                app:selectionDividerActiveAlpha="255"
+                app:selectionDividerDimmedAlpha="255"
+                app:selectionDividerHeight="1px"
+                app:visibleItems="5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

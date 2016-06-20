@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/main_include_bg"
+        android:orientation="vertical" >
+
+        <com.xiaoaitouch.mom.view.MyGridView
+            android:id="@+id/share_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:horizontalSpacing="8dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"
+            android:soundEffectsEnabled="true"
+            android:verticalSpacing="16dp" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/share_cancle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_bg_item"
+            android:gravity="center"
+            android:text="@string/cancle_tv"
+            android:textSize="@dimen/size_dp_18"
+            app:textview_color="@color/white"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+    </LinearLayout>
+
+</ScrollView>

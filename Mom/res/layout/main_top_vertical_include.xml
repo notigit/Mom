@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/other_baby_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/week1" />
+
+    <com.xiaoaitouch.mom.view.XTextView
+        android:id="@+id/other_due_day_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/other_baby_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_16" />
+
+    <TextView
+        android:id="@+id/other_baby_details_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/other_due_day_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_16" />
+
+    <ImageView
+        android:id="@+id/other_share_image"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/indexpull_share_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dialog_top_ray"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/main_top_dialog" >
+
+            <com.xiaoaitouch.mom.view.WaveView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                app:above_wave_color="@android:color/white"
+                app:blow_wave_color="@android:color/white"
+                app:wave_height="large"
+                app:wave_hz="slow"
+                app:wave_length="little" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/dialog_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="绑定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_18" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/dialog_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_18" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_top_ray"
+            android:background="@drawable/main_dialog"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <ImageView
+                android:id="@+id/info_shoe_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/info_shoe_img" />
+
+            <TextView
+                android:id="@+id/shoe_info_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_shoe_icon"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="绑定智能鞋能更好的辅助妈妈运动"
+                android:textColor="@color/activity_top_color"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/binding_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/shoe_info_tv"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/new_symptom_rbt_bt_s"
+                android:gravity="center"
+                android:text="绑定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_18" />
+
+            <TextView
+                android:id="@+id/buy_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/binding_tv"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/new_user_input_symptom_bg"
+                android:gravity="center"
+                android:text="购买"
+                android:textColor="@color/activity_top_color"
+                android:textSize="@dimen/size_dp_18" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

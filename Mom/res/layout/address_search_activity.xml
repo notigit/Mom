@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#E5E5E5" >
+
+        <RelativeLayout
+            android:id="@+id/map_search_ray"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@+id/cancle_tv"
+            android:background="@drawable/map_search_bg"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/map_search_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/place_search_icon"
+                android:drawablePadding="8dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="搜索地点"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cancle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="@string/cancle_tv"
+            android:textColor="@color/activity_top_color"
+            android:textSize="@dimen/size_dp_18" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/map_search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/map_search_buttom_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:listSelector="#00000000" />
+
+</LinearLayout>

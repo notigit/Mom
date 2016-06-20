@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:id="@+id/list_filter_imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_filter" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/list_filter_tvFilterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_filter_imgFilter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="滤镜"
+            android:textSize="12dp" 
+            android:textColor="#929292"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_info_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/register_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/age_view"
+                layout="@layout/age_register_item"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/height_view"
+                layout="@layout/height_register_item"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/weight_view"
+                layout="@layout/weight_register_item"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/due_view"
+                layout="@layout/due_register_item"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/end_time_due_view"
+                layout="@layout/end_time_due_register_item"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/menstrual_cycle_view"
+                layout="@layout/menstrual_cycle_register_item"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_buttom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/click_next"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/user_next_bg_item"
+                android:gravity="center"
+                android:text="@string/guide_click_next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/user_nick_name_view"
+        layout="@layout/user_nick_name_item" />
+
+    <include
+        android:id="@+id/due_is_know_lay"
+        layout="@layout/due_is_know_include"
+        android:visibility="gone" />
+
+</RelativeLayout>

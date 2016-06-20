@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 日期卡片 -->
+
+    <include
+        android:id="@+id/main_date_view"
+        layout="@layout/main_date_item_include"
+        android:visibility="gone" />
+    <!-- 天气卡片 -->
+
+    <include
+        android:id="@+id/main_weather_view"
+        layout="@layout/main_weather_item_include" />
+
+    <!-- 分享卡片 -->
+
+    <include
+        android:id="@+id/main_share_view"
+        layout="@layout/main_share_item_include" />
+
+    <!-- 星座卡片 -->
+
+    <include
+        android:id="@+id/main_horoscope_view"
+        layout="@layout/main_horoscope_item_include" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- mine-fragment -->
+    <string name="mine_no_login_tv">创建帐号就能把数据永久的保存起来了。</string>
+    <string name="mine_register_tv">注册</string>
+    <string name="mine_login_tv">登录</string>
+    <string name="mine_nickname_tv">昵称</string>
+    <string name="mine_due_tv">预产期</string>
+    <string name="mine_meterial_tv">资料</string>
+    <string name="mine_meterial_tip_tv">年龄、身高</string>
+    <string name="mine_setting_tv">设置</string>
+    <string name="mine_setting_tip_tv">消息推送、退出</string>
+
+    <!-- due-fragment -->
+    <string name="mine_due_input_tv">输入预产期</string>
+    <string name="mine_due_calculated_tv">计算预产期</string>
+    <string name="mine_due_title_tv">预产期</string>
+    <string name="mine_due_label_tv">编辑标签</string>
+    <string name="mine_end_due_tv">末次月经日期</string>
+    <string name="mine_end_due_day_tv">月经周期天数</string>
+
+    <!-- setting-fragment -->
+    <string name="mine_setting_health_tv">健康授权</string>
+    <string name="mine_setting_message_tv">消息推送</string>
+    <string name="mine_setting_shera_tv">分享</string>
+    <string name="mine_setting_about_tv">关于</string>
+    <string name="mine_setting_score_tv">评分</string>
+    <string name="mine_setting_out_login_tv">退出登录</string>
+
+    <!-- material-fragment -->
+    <string name="mine_material_age_tv">年龄</string>
+    <string name="mine_material_height_tv">身高</string>
+    <string name="mine_material_weight_tv">体重</string>
+
+    <!-- register-fragment -->
+    <string name="mine_register_tell_tv">手　机</string>
+    <string name="mine_register_captchas_tv">获取验证码</string>
+    <string name="mine_register_input_captchas_tv">验证码</string>
+    <string name="mine_register_pwd_tv">密     码</string>
+    <string name="mine_login_account_tv">帐号</string>
+
+</resources>

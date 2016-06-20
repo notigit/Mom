@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/main_top_h_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/main_baby_image"
+        android:orientation="vertical" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/main_babay_length_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_16" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/main_baby_wight_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_16" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/main_baby_due_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_baby_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/week1" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiaoaitouch.mom.view.XTextView
+        android:id="@+id/symptom_rbt"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/new_symptom_rbt_bt_s"
+        android:gravity="center"
+        android:text="停经"
+        android:textSize="@dimen/size_dp_16" />
+
+    <ImageView
+        android:id="@+id/delete_markView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="top|right"
+        android:scaleType="fitXY"
+        android:src="@drawable/delete" />
+
+</FrameLayout>

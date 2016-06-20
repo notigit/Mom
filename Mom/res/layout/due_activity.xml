@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/activity_top_color" >
+
+        <ImageView
+            android:id="@+id/activity_top_back_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoe_bake_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/activity_due"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_20" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="#FC7999"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/user_input_due_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/due_left_corner_bg"
+            android:gravity="center"
+            android:text="@string/mine_due_input_tv"
+            android:textColor="@color/due_select_color"
+            android:textSize="@dimen/size_dp_16" />
+
+        <TextView
+            android:id="@+id/calculated_due_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/due_right_corner"
+            android:gravity="center"
+            android:text="@string/mine_due_calculated_tv"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_16" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/user_input_due_view"
+        layout="@layout/user_input_due_view_item" />
+
+    <include
+        android:id="@+id/user_calculated_idue_view"
+        layout="@layout/user_calculated_idue_view_item"
+        android:visibility="gone" />
+
+</LinearLayout>

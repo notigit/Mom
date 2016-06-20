@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/view_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/guide_height_title"
+        android:textColor="@color/guide_top_color"
+        android:textSize="46sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_tv" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/height_left_tv"
+            android:text="@string/guide_height"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/height_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/meters_left_tv"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/meters_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/height_choose_view"
+            android:text="@string/guide_height_meters"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.CommonWheelView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/height_choose_view"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:selectionDividerActiveAlpha="255"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1px"
+            app:visibleItems="5" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/height_choose_view"
+            android:text="@string/guide_height_cm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

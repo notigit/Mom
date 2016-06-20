@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/activity_top_color" >
+
+        <ImageView
+            android:id="@+id/activity_top_back_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoe_bake_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/activity_forgit_pwd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_20" />
+    </RelativeLayout>
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="12dp" />
+
+    <RelativeLayout
+        style="@style/CommonItemLayout"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/user_metal_view"
+            style="@style/MoreHomeItemIcon"
+            android:layout_width="18dp"
+            android:layout_height="26dp"
+            android:background="@drawable/user_tell_image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_metal_view"
+            android:layout_alignTop="@+id/user_metal_view"
+            android:layout_toRightOf="@+id/user_metal_view"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_tell_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="手机"
+                android:textColor="#929292"
+                android:textSize="@dimen/size_dp_14" />
+
+            <EditText
+                android:id="@+id/user_input_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/user_get_captchas_tv"
+                android:layout_toRightOf="@+id/user_tell_tv"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/user_get_captchas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:text="获取验证码"
+                android:textColor="#FC7999"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <RelativeLayout
+        style="@style/CommonItemLayout"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/user_captchas_view"
+            style="@style/MoreHomeItemIcon"
+            android:layout_width="20dp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_captchas_view"
+            android:layout_alignTop="@+id/user_captchas_view"
+            android:layout_toRightOf="@+id/user_captchas_view"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_captchas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="验证码"
+                android:textColor="#929292"
+                android:textSize="@dimen/size_dp_14" />
+
+            <EditText
+                android:id="@+id/user_input_captchas_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/user_captchas_tv"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <RelativeLayout
+        style="@style/CommonItemLayout"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/user_pwd_view"
+            style="@style/MoreHomeItemIcon"
+            android:layout_width="20dp"
+            android:layout_height="23dp"
+            android:background="@drawable/user_person_image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_pwd_view"
+            android:layout_alignTop="@+id/user_pwd_view"
+            android:layout_toRightOf="@+id/user_pwd_view"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_pwd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="密码"
+                android:textColor="#929292"
+                android:textSize="@dimen/size_dp_14" />
+
+            <EditText
+                android:id="@+id/user_input_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/user_pwd_tv"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <com.xiaoaitouch.mom.view.XTextView
+        android:id="@+id/user_login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/login_bg_item"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_18" />
+
+</LinearLayout>

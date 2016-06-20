@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/map_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/white" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/mapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent" >
+
+                    <RelativeLayout
+                        android:id="@+id/map_search_ray"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/map_search_bg" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:drawableLeft="@drawable/place_search_icon"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="搜索地点"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_dp_14" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/map_move_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/map_center_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="-6dp"
+                        android:src="@drawable/place_pin_icon" />
+
+                    <TextView
+                        android:id="@+id/map_center_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/map_location_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/place_arrow_icon" />
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/map_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DFDFDF" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/activity_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/calendar_back"
+            android:textColor="@color/activity_top_color"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/activity_top_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="@string/save_tv"
+            android:textColor="@color/activity_top_color"
+            android:textSize="@dimen/size_dp_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

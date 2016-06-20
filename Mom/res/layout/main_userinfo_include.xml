@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/main_include_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" >
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/main_user_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="94dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_16" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/main_user_memorabilia_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:drawableLeft="@drawable/index_importantthings_icon"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="大事记"
+                android:textColor="#FEA9BC"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp" >
+
+            <LinearLayout
+                android:id="@+id/main_user_weight_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.xiaoaitouch.mom.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体重"
+                    android:textColor="#A3A3A3"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <com.xiaoaitouch.mom.view.XTextView
+                    android:id="@+id/main_user_weight_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="--"
+                    android:textColor="#a5de37"
+                    android:textSize="@dimen/size_dp_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_user_symptoms_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.xiaoaitouch.mom.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="症状"
+                    android:textColor="#A3A3A3"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <com.xiaoaitouch.mom.view.XTextView
+                    android:id="@+id/main_user_symptoms_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="正常"
+                    android:textColor="#a5de37"
+                    android:textSize="@dimen/size_dp_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.xiaoaitouch.mom.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自查"
+                    android:textColor="#A3A3A3"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <com.xiaoaitouch.mom.view.XTextView
+                    android:id="@+id/main_user_examination_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="正常"
+                    android:textColor="#a5de37"
+                    android:textSize="@dimen/size_dp_16" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.xiaoaitouch.mom.view.RoundedImageView
+        android:id="@+id/main_user_head_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_userhead"
+        app:border_color="@color/white"
+        app:border_width="2dp"
+        app:corner_radius="90dp"
+        app:oval="false" />
+
+</RelativeLayout>

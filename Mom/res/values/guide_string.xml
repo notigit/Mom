@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="guide_click_next">下一步</string>
+    <string name="guide_is_know">您知道自己的预产期吗？</string>
+    <string name="guide_know">知道</string>
+    <string name="guide_no_know">不知道</string>
+    <!-- age -->
+    <string name="guide_age_title">Age</string>
+    <string name="guide_age_currently">目前</string>
+    <string name="guide_age_year">岁</string>
+
+    <!-- Height -->
+    <string name="guide_height_title">Height</string>
+    <string name="guide_height">身高</string>
+    <string name="guide_height_meters">米</string>
+    <string name="guide_height_cm">厘米</string>
+
+    <!-- Weight -->
+    <string name="guide_weight_title">Weight</string>
+    <string name="guide_weight">体重</string>
+    <string name="guide_weight_kg">千克</string>
+
+    <!-- Period -->
+    <string name="guide_due_title">Period</string>
+    <string name="guide_due">预产期</string>
+    <string name="guide_due_month">月</string>
+    <string name="guide_due_days">日</string>
+
+    <!-- EndDue -->
+    <string name="guide_end_due_title">Period</string>
+    <string name="guide_end_due">末次经期</string>
+    <string name="guide_end_due_month">月</string>
+    <string name="guide_end_due_days">日</string>
+
+    <!-- Days -->
+    <string name="guide_days_title">Days</string>
+    <string name="guide_days_week">月经周期</string>
+    <string name="guide_days">天</string>
+
+    <!-- Symptom -->
+    <string name="guide_symptom_title">Symptom</string>
+    <string name="guide_symptom_external">外部</string>
+    <string name="guide_symptom_external_tumor">脚肿</string>
+    <string name="guide_symptom_external_backache">腰酸</string>
+    <string name="guide_symptom_external_breast">乳房胀痛</string>
+    <string name="guide_symptom_internal">内部</string>
+    <string name="guide_symptom_internal_temperature">体温升高</string>
+    <string name="guide_symptom_internal_menolipsis">停经</string>
+    <string name="guide_symptom_internal_unusually">白带异常</string>
+    <string name="guide_symptom_custom">自定义</string>
+    <string name="guide_symptom_submit">提交</string>
+    <string name="guide_symptom_input">请输入</string>
+    <string name="guide_symptom_complete">完成</string>
+
+</resources>

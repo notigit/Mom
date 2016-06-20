@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/user_due_lay"
+        style="@style/CommonItemLinearLayout" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:text="@string/mine_due_title_tv"
+            app:textview_bold="1"
+            app:textview_color="@color/black"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/user_due_tv"
+            style="@style/LinearLayoutItemText"
+            app:textview_color="@color/tip_color_tv"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+
+        <View style="@style/LinearLayoutRightArrow" />
+    </LinearLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+</LinearLayout>

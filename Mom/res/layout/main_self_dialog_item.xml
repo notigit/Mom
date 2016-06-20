@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/self_ray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <com.xiaoaitouch.mom.view.XTextView
+        android:id="@+id/self_dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/self_right_lay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/self_right_lay"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/mine_no_login_tv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_dp_16" />
+
+    <LinearLayout
+        android:id="@+id/self_right_lay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/check_question_icon"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/self_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">妈咪神器</string>
+    <string name="app_exit">再按一次退出应用程序</string>
+    <string name="scan_message">将条形码放入框中即可自动扫描</string>
+    <string name="activity_setting">设置</string>
+    <string name="activity_register">注册</string>
+    <string name="activity_login">登录</string>
+    <string name="activity_due">预产期</string>
+    <string name="activity_material">资料</string>
+    <string name="activity_edit_label">编辑标签</string>
+    <string name="activity_forgit_pwd">忘记密码</string>
+    <string name="activity_trail">生成足迹</string>
+    <string name="activity_my_records">我的记录</string>
+    <string name="activity_home_page">首页</string>
+    <string name="activity_update_nickname">修改昵称</string>
+    <string name="activity_big">大事件</string>
+    <string name="save_tv">保存</string>
+    <string name="cancle_tv">取消</string>
+    <string name="calendar_today">今天</string>
+    <string name="calendar_back">返回</string>
+    <string name="dialog_share">分享</string>
+    <string name="dialog_editor">编辑</string>
+    <string name="dialog_delet">删除</string>
+    <string name="dialog_cancle_tv">取消</string>
+    <string name="scan_text"></string>
+
+    <string-array name="main_horoscope_name">
+        <item>白羊座</item>
+        <item>狮子座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>天枰座</item>
+        <item>水瓶座</item>
+        <item>天蝎座</item>
+        <item>金牛座</item>
+        <item>双鱼座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>处女座</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mine_top_ray"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <ImageView
+                android:id="@+id/activity_top_back_image"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shoe_bake_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/wave_view"
+            android:layout_below="@+id/mine_top_ray"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/user_login_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <com.xiaoaitouch.mom.view.RoundedImageView
+                    android:id="@+id/user_head_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/setting_userhead"
+                    app:border_color="@color/white"
+                    app:border_width="3dp"
+                    app:corner_radius="90dp"
+                    app:oval="false" />
+
+                <com.xiaoaitouch.mom.view.XTextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_head_image"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_dp_18" />
+            </RelativeLayout>
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/user_no_login_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/mine_no_login_tv"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_is_login_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/mine_register_tv"
+                android:layout_width="110dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/mine_bg_item"
+                android:gravity="center"
+                android:text="@string/mine_register_tv"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_16" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/mine_login_tv"
+                android:layout_width="110dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/mine_bg_item"
+                android:gravity="center"
+                android:text="@string/mine_login_tv"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+
+        <com.xiaoaitouch.mom.view.WaveView
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            app:above_wave_color="@android:color/white"
+            app:blow_wave_color="@android:color/white"
+            app:wave_height="large"
+            app:wave_hz="slow"
+            app:wave_length="little" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/user_message_list_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout style="@style/CommonItemLayout" >
+
+                <View
+                    android:id="@+id/user_nickname_view"
+                    style="@style/MoreHomeItemIcon"
+                    android:background="@drawable/my_name_icon" />
+
+                <LinearLayout
+                    android:id="@+id/mine_nickname_view_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/user_nickname_view"
+                    android:layout_alignTop="@+id/user_nickname_view"
+                    android:layout_toRightOf="@+id/user_nickname_view"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.xiaoaitouch.mom.view.XTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_nickname_tv"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_16"
+                        android:textStyle="bold" />
+
+                    <com.xiaoaitouch.mom.view.XTextView
+                        android:id="@+id/mine_nickname_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/tip_color_tv"
+                        android:textSize="@dimen/size_dp_14" />
+                </LinearLayout>
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <View style="@style/MoreHomeItemHorizontalLine" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout style="@style/CommonItemLayout" >
+
+                <View
+                    android:id="@+id/user_due_time_view"
+                    style="@style/MoreHomeItemIcon"
+                    android:background="@drawable/user_due_image" />
+
+                <LinearLayout
+                    android:id="@+id/mine_due_view_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/user_due_time_view"
+                    android:layout_alignTop="@+id/user_due_time_view"
+                    android:layout_toRightOf="@+id/user_due_time_view"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.xiaoaitouch.mom.view.XTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_due_tv"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_16"
+                        android:textStyle="bold" />
+
+                    <com.xiaoaitouch.mom.view.XTextView
+                        android:id="@+id/mine_due_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/tip_color_tv"
+                        android:textSize="@dimen/size_dp_14" />
+                </LinearLayout>
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <View style="@style/MoreHomeItemHorizontalLine" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout style="@style/CommonItemLayout" >
+
+                <View
+                    android:id="@+id/user_metal_view"
+                    style="@style/MoreHomeItemIcon"
+                    android:background="@drawable/user_meterial_image" />
+
+                <LinearLayout
+                    android:id="@+id/mine_meterial_view_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/user_metal_view"
+                    android:layout_alignTop="@+id/user_metal_view"
+                    android:layout_toRightOf="@+id/user_metal_view"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.xiaoaitouch.mom.view.XTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_meterial_tv"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_16"
+                        android:textStyle="bold" />
+
+                    <com.xiaoaitouch.mom.view.XTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:singleLine="true"
+                        android:text="@string/mine_meterial_tip_tv"
+                        android:textColor="@color/tip_color_tv"
+                        android:textSize="@dimen/size_dp_14" />
+                </LinearLayout>
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <View style="@style/MoreHomeItemHorizontalLine" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

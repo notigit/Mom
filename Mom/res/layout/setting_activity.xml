@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/activity_top_color" >
+
+        <ImageView
+            android:id="@+id/activity_top_back_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoe_bake_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/activity_setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_20" />
+    </RelativeLayout>
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="12dp" />
+
+    <RelativeLayout style="@style/CommonItemLayouts" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:text="@string/mine_setting_message_tv"
+            android:textColor="@color/black" />
+
+        <com.xiaoaitouch.mom.view.ShSwitchView
+            xmlns:shSwitch="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/switch_view"
+            android:layout_width="66dip"
+            android:layout_height="44dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            shSwitch:shadowSpace="7dip"
+            shSwitch:tintColor="#FF8CA8" />
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="12dp" />
+
+    <RelativeLayout style="@style/CommonItemLayouts" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:text="@string/mine_setting_about_tv"
+            android:textColor="@color/black" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <RelativeLayout style="@style/CommonItemLayouts" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:text="@string/mine_setting_score_tv"
+            android:textColor="@color/black" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <LinearLayout
+        android:id="@+id/mine_setting_out_login_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <View style="@style/MoreHomeItemHorizontalLine" />
+
+        <com.xiaoaitouch.mom.view.XButton
+            android:id="@+id/more_exist_app"
+            style="@style/ButtonFullWidth"
+            android:layout_height="46dp"
+            android:text="@string/mine_setting_out_login_tv"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/food_line"
+            style="@style/MoreHomeItemHorizontalLine" />
+    </LinearLayout>
+
+</LinearLayout>

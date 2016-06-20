@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/calendar_content_bg_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_circle_selected"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/calendar_ray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/calendar_week_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_16" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/calendar_day_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calendar_week_tv"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+            android:text="@string/calendar_today"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_12"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/calendar_is_data_image"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/calendar_week_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_circle_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

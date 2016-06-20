@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_weight="0.68"
+    android:background="@drawable/main_dialog"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:weightSum="1" >
+
+    <ImageView
+        android:id="@+id/share_card_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/index_recordcard_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/main_share_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:text="前段时间我去拍的艺术照，摄影师的技术不错！"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_16" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/main_share_address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="重庆.立海大厦"
+            android:textColor="#ff7999"
+            android:textSize="@dimen/size_dp_16" />
+
+        <ImageView
+            android:id="@+id/share_mood_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

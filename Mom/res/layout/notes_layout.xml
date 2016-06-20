@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/map_bg" >
+
+    <com.xiaoaitouch.mom.view.VScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp" >
+
+        <LinearLayout
+            android:id="@+id/notes_layoutScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/notes_relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/notes_btnFlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/record_light_icon_auto" />
+
+                <ImageView
+                    android:id="@+id/notes_btnSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/record_change_icon" />
+
+                <ImageView
+                    android:id="@+id/notes_btnAlbum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/notes_relativeLayout"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/record_imge_icon" />
+
+                <ImageView
+                    android:id="@+id/notes_btnTakePic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/notes_relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/record_cam_icon" />
+            </RelativeLayout>
+
+            <com.devsmart.android.ui.HorizontalListView
+                android:id="@+id/notes_listview"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/notes_layoutInfomation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <EditText
+                    android:id="@+id/notes_etContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="记录孕期新鲜事..."
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/line_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/notes_tvSmybol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="现在心情"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignBottom="@+id/notes_layoutSymbol"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:id="@+id/notes_layoutSymbol"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/notes_tvSmybol"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0" >
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbol01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bq_1" />
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbolTab01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/record_faceselected_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0" >
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbol02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bq_2" />
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbolTab02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/record_faceselected_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0" >
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbol03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bq_3" />
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbolTab03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/record_faceselected_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0" >
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbol04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bq_4" />
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbolTab04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/record_faceselected_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0" >
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbol05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bq_5" />
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbolTab05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/record_faceselected_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0" >
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbol06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bq_6" />
+
+                            <ImageView
+                                android:id="@+id/notes_imgSymbolTab06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/record_faceselected_icon" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/notes_btnLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/user_address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="所在位置"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_16" />
+
+                    <TextView
+                        android:id="@+id/share_address_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/user_address_tv"
+                        android:drawablePadding="4dp"
+                        android:drawableRight="@drawable/map_icon_arrow"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="#929292"
+                        android:textSize="@dimen/size_dp_16" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.xiaoaitouch.mom.view.VScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/activity_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:text="取消"
+            android:textColor="@color/activity_top_color"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/activity_top_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="发送"
+            android:textColor="@color/activity_top_color"
+            android:textSize="@dimen/size_dp_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

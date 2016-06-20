@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/view_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/guide_end_due_title"
+        android:textColor="@color/guide_top_color"
+        android:textSize="46sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_tv"
+        android:gravity="center" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/end_time_due_year_tv"
+            android:text="@string/guide_end_due"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/end_time_due_year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/end_time_due_month_choose_view"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.CommonWheelView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/end_time_due_month_choose_view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:selectionDividerActiveAlpha="255"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1px"
+            app:visibleItems="5" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/end_time_due_month_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/end_time_due_month_choose_view"
+            android:text="@string/guide_end_due_month"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+
+        <com.xiaoaitouch.mom.view.CommonWheelView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/end_time_due_date_choose_view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/end_time_due_month_tv"
+            app:selectionDividerActiveAlpha="255"
+            app:selectionDividerDimmedAlpha="255"
+            app:selectionDividerHeight="1px"
+            app:visibleItems="5" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/end_time_due_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/end_time_due_date_choose_view"
+            android:text="@string/guide_end_due_days"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

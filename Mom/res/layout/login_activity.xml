@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/activity_top_color" >
+
+        <ImageView
+            android:id="@+id/activity_top_back_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoe_bake_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/activity_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_20" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/activity_top_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="忘记密码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_14" />
+    </RelativeLayout>
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="12dp" />
+
+    <RelativeLayout
+        style="@style/CommonItemLayout"
+        android:layout_height="45dp" >
+
+        <View
+            android:id="@+id/user_metal_view"
+            style="@style/MoreHomeItemIcon"
+            android:layout_width="20dp"
+            android:layout_height="23dp"
+            android:background="@drawable/user_person_image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_metal_view"
+            android:layout_alignTop="@+id/user_metal_view"
+            android:layout_toRightOf="@+id/user_metal_view"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/mine_login_account_tv"
+                android:textColor="@color/tip_color_tv"
+                android:textSize="@dimen/size_dp_14" />
+
+            <EditText
+                android:id="@+id/user_input_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/user_account_tv"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <RelativeLayout
+        style="@style/CommonItemLayout"
+        android:layout_height="45dp" >
+
+        <View
+            android:id="@+id/user_pwd_view"
+            style="@style/MoreHomeItemIcon"
+            android:layout_width="20dp"
+            android:layout_height="23dp"
+            android:background="@drawable/user_pwd_image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_pwd_view"
+            android:layout_alignTop="@+id/user_pwd_view"
+            android:layout_toRightOf="@+id/user_pwd_view"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_pwd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/mine_register_pwd_tv"
+                android:textColor="@color/tip_color_tv"
+                android:textSize="@dimen/size_dp_14" />
+
+            <EditText
+                android:id="@+id/user_input_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/user_pwd_tv"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <com.xiaoaitouch.mom.view.XTextView
+        android:id="@+id/user_login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/login_bg_item"
+        android:gravity="center"
+        android:text="@string/mine_login_tv"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/user_select_sina_login_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/user_sina_image"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/user_select_weixin_login_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/user_weixin_image"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

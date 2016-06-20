@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaoaitouch.mom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <com.xiaoaitouch.mom.view.XEditText
+            android:id="@+id/user_input_symptom_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/new_user_input_symptom_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="请输入"
+            android:maxLength="6"
+            android:textColorHint="@color/due_select_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/size_dp_16"
+            app:textview_color="@color/due_select_color"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/user_nick_complete_tv"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/new_user_next_bg_item"
+            android:gravity="center"
+            android:text="完成"
+            android:textSize="@dimen/size_dp_16"
+            app:textview_color="@color/due_select_color"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+    </LinearLayout>
+
+</RelativeLayout>

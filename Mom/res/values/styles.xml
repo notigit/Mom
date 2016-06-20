@@ -1,0 +1,231 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 从上到下弹出 -->
+    <style name="ActionUpDownDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActionUpDownAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionUpDownAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/up_in_middle</item>
+        <item name="android:windowExitAnimation">@anim/middle_out_down</item>
+    </style>
+
+    <!-- 从右向左弹出 -->
+    <style name="ActionRightLeftDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActionRightLeftAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionRightLeftAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <!-- 底部弹出框样式 -->
+    <style name="ActionSheetDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/action_sheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/action_sheet_dialog_out</item>
+    </style>
+
+    <!-- 上到下弹出框样式 -->
+    <style name="ActionSheetDialogDown" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimationDown</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionSheetDialogAnimationDown" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/action_sheet_dialog_down_in</item>
+        <item name="android:windowExitAnimation">@anim/action_sheet_dialog_down_out</item>
+    </style>
+
+    <style name="ActionSheetDialogBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- 全屏宽度布局样式 -->
+    <style name="CommonItemLayouts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/common_single_item</item>
+    </style>
+
+    <style name="CommonItemLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/common_single_item</item>
+    </style>
+
+    <style name="MoreHomeItemIcon">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- 横线 -->
+    <style name="MoreHomeItemHorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+    <!-- 在相对布局里的通用进入箭头 -->
+    <style name="CommonArrow" parent="BaseArrow">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- 基础进入箭头 -->
+    <style name="BaseArrow">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:background">@drawable/common_icon_arrow</item>
+    </style>
+
+    <style name="BaseTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textView_color</item>
+        <item name="android:textSize">@dimen/size_dp_16</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- base 全屏宽项 title 文字样式 -->
+    <style name="BaseItemText" parent="BaseTextView">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- 横线 -->
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/horizontal_line</item>
+    </style>
+
+    <!-- 通用Item中间短线横线 -->
+    <style name="ItemMiddleHorizontalLine" parent="HorizontalLine">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+    <!-- 全屏宽度按钮样式 -->
+    <style name="ButtonFullWidth" parent="CommonItemLayouts">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/size_dp_17</item>
+    </style>
+    <!-- 全屏宽度布局样式 -->
+    <style name="CommonItemLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/common_single_item</item>
+    </style>
+
+    <style name="LinearLayoutItemText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/item_gray</item>
+        <item name="android:textSize">@dimen/size_dp_16</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="LinearLayoutRightArrow" parent="BaseArrow">
+        <item name="android:layout_gravity">right|center</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/size_dp_13</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:layout_weight">0.25</item>
+        <item name="android:drawablePadding">6dip</item>
+    </style>
+
+    <style name="Theme.CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Theme.Zxing" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@style/zxingAnimation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="zxingAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/zxing_out</item>
+    </style>
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaoaitouch.mom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/activity_top_color" >
+
+        <ImageView
+            android:id="@+id/activity_top_back_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoe_bake_icon" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/activity_update_nickname"
+            android:textSize="@dimen/size_dp_20"
+            app:textview_color="@color/white"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/symptom_view_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="外部"
+            android:textSize="@dimen/size_dp_16"
+            app:textview_color="@color/due_select_color"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:background="#E7E7E7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <com.xiaoaitouch.mom.view.XCheckBox
+                android:id="@+id/external_tumor_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/new_symptom_rbt_bg"
+                android:button="@null"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="脚肿"
+                android:textColor="@color/new_due_select_color"
+                android:textSize="@dimen/size_dp_16"
+                app:textview_style="SourceHanSansCN-Light.ttf" />
+
+            <com.xiaoaitouch.mom.view.XCheckBox
+                android:id="@+id/external_backache_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/new_symptom_rbt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="腰酸"
+                android:textColor="@color/new_due_select_color"
+                android:textSize="@dimen/size_dp_16"
+                app:textview_style="SourceHanSansCN-Light.ttf" />
+
+            <com.xiaoaitouch.mom.view.XCheckBox
+                android:id="@+id/external_breast_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/new_symptom_rbt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="乳房胀痛"
+                android:textColor="@color/new_due_select_color"
+                android:textSize="@dimen/size_dp_16"
+                app:textview_style="SourceHanSansCN-Light.ttf" />
+        </LinearLayout>
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="内部"
+            android:textSize="@dimen/size_dp_16"
+            app:textview_color="@color/due_select_color"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:background="#E7E7E7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <com.xiaoaitouch.mom.view.XCheckBox
+                android:id="@+id/internal_temperature_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_symptom_rbt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="体温升高"
+                android:textColor="@color/new_due_select_color"
+                android:textSize="@dimen/size_dp_16"
+                app:textview_style="SourceHanSansCN-Light.ttf" />
+
+            <com.xiaoaitouch.mom.view.XCheckBox
+                android:id="@+id/internal_menolipsis_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/new_symptom_rbt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="停经"
+                android:textColor="@color/new_due_select_color"
+                android:textSize="@dimen/size_dp_16"
+                app:textview_style="SourceHanSansCN-Light.ttf" />
+
+            <com.xiaoaitouch.mom.view.XCheckBox
+                android:id="@+id/internal_unusually_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/new_symptom_rbt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="白带异常"
+                android:textColor="@color/new_due_select_color"
+                android:textSize="@dimen/size_dp_16"
+                app:textview_style="SourceHanSansCN-Light.ttf" />
+        </LinearLayout>
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:text="自定义"
+            android:textSize="@dimen/size_dp_16"
+            app:textview_color="@color/due_select_color"
+            app:textview_style="SourceHanSansCN-Light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:background="#E7E7E7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <com.xiaoaitouch.mom.view.MyGridView
+                android:id="@+id/symptom_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:horizontalSpacing="8dp"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:soundEffectsEnabled="true"
+                android:verticalSpacing="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/add_symptom_view"
+        layout="@layout/new_add_symptom_item"
+        android:visibility="gone" />
+
+</LinearLayout>

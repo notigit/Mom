@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dialog_top_ray"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/main_top_dialog" >
+
+            <com.xiaoaitouch.mom.view.WaveView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                app:above_wave_color="@android:color/white"
+                app:blow_wave_color="@android:color/white"
+                app:wave_height="large"
+                app:wave_hz="slow"
+                app:wave_length="little" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/dialog_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="自查"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_18" />
+
+            <com.xiaoaitouch.mom.view.XTextView
+                android:id="@+id/dialog_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_18" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_top_ray"
+            android:background="@drawable/main_dialog"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/dialog_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:divider="@color/transparent"
+                android:dividerHeight="20dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

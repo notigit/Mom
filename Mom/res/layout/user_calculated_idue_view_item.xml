@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/user_end_due_lay"
+        style="@style/CommonItemLinearLayout" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:text="@string/mine_end_due_tv"
+            android:textColor="@color/black" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/user_end_due_tv"
+            style="@style/LinearLayoutItemText"
+            android:textColor="@color/tip_color_tv" />
+
+        <View style="@style/LinearLayoutRightArrow" />
+    </LinearLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <LinearLayout
+        android:id="@+id/user_due_day_lay"
+        style="@style/CommonItemLinearLayout" >
+
+        <com.xiaoaitouch.mom.view.XTextView
+            style="@style/BaseItemText"
+            android:text="@string/mine_end_due_day_tv"
+            android:textColor="@color/black" />
+
+        <com.xiaoaitouch.mom.view.XTextView
+            android:id="@+id/user_due_day_tv"
+            style="@style/LinearLayoutItemText"
+            android:textColor="@color/tip_color_tv" />
+
+        <View style="@style/LinearLayoutRightArrow" />
+    </LinearLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+</LinearLayout>
